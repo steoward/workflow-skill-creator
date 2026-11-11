@@ -36,6 +36,9 @@ workflow-distill = "scripts.distill:main"
 workflow-validate = "scripts.validator:main"
 workflow-scaffold = "scripts.scaffold:main"
 
+[tool.hatch.build.targets.wheel]
+packages = ["scripts"]
+
 [tool.pytest.ini_options]
 testpaths = ["tests"]
 python_files = ["test_*.py"]
