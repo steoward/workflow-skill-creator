@@ -326,7 +326,7 @@ def main():
             for issue in v.issues:
                 print(f"  {issue}")
             sys.exit(1)
-        print("✓ Distilled skill passed validation!")
+        print("[PASS] Distilled skill passed validation!")
 
 
 if __name__ == "__main__":

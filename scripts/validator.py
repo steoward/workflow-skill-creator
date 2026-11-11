@@ -239,10 +239,10 @@ def main():
         print(f"\nValidating skill at: {validator.skill_file}")
         print("=" * 60)
         if not validator.issues:
-            print("✓ Skill passed all validation checks with 0 errors and 0 warnings.")
+            print("[PASS] Skill passed all validation checks with 0 errors and 0 warnings.")
         else:
             for issue in validator.issues:
-                prefix = "❌ " if issue.level == "ERROR" else "⚠️  "
+                prefix = "[ERROR] " if issue.level == "ERROR" else "[WARN]  "
                 print(f"{prefix}{issue}")
             errors = sum(1 for i in validator.issues if i.level == "ERROR")
             warnings = sum(1 for i in validator.issues if i.level == "WARNING")
