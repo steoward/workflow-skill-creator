@@ -14,3 +14,4 @@ venv/
 .temp/
 *.lock
 !Cargo.lock
+!uv.lock
